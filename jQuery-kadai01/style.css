@@ -1,0 +1,82 @@
+/* BASE */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* LAYOUT */
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  border: 1px solid black;
+  padding: 0px 20px;
+  margin-left: 20px;
+}
+
+.header-logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+  margin: 0px 20px;
+}
+
+/* メイン */
+
+.mainvisual {
+  position: relative;
+}
+
+/* ----メインビジュアルのアニメーション設定------ */
+
+.mainvisual-img {
+  position: absolute;
+  width: 100%;
+  animation: change-img-anim 15s infinite;
+
+  opacity: 0;
+}
+.mainvisual-img:nth-child(1) {
+	animation-delay: 0s;
+}
+.mainvisual-img:nth-child(2) {
+	animation-delay: 5s;
+}
+.mainvisual-img:nth-child(3) {
+	animation-delay: 10s;
+}
+@keyframes change-img-anim {
+	0%{ opacity: 0;}
+	10%{ opacity: 1;}
+	90%{ opacity: 1;}
+	100%{ opacity: 0;}
+}
+
+/* ---------------------------------- */
+
+/* MODULE */
